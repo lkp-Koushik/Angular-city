@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+   public leftnav:string;
+
+  ngOnInit(): void {
+    this.leftnav='closed';
+  }
+  openLeftnav(){
+  //  this.leftnav='open';
+    console.log('opened');
+  }
+  closeLeftnav(){
+   // this.leftnav='closed';
+    console.log('close');
+  }
 }
